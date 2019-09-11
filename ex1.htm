@@ -1,0 +1,13 @@
+ <SCRIPT LANGUAGE=VBScript RUNAT=Server>
+Public Sub Rutina_hora
+  '------Aqui se obtiene la hora
+  Response.Write( Time() )
+End Sub
+</SCRIPT>
+
+<HTML>
+<HEAD><TITLE>Prueba de ASP</TITLE></HEAD>
+<BODY>
+Bienvenidos al ASP. Son las <% Call(Rutina_hora) %>
+</BODY>
+</HTML>
